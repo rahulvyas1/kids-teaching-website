@@ -44,30 +44,68 @@ export const PaddingWrapper = styled.div`
 export const Sqwrapper = styled.div`
     background-image: linear-gradient(to bottom, #eef9ff -10%, #ade1ff);
     position:relative;
-    top: -30px;
+    top:0;
 &:before {
     content: '';
     background-image: linear-gradient(to top,#eef9ff -10%,#ade1ff);
     position: absolute;
-    height: 96px;
+    height: 146px;
     width: 100%;
     left: 0;
     right: 0;
-    top: -96px;
+    top: -146px;
     clip-path: ellipse(53% 58% at 50% 103%);
 }
+    h3 {
+        font-size:32px;
+        margin-bottom: 10px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .upcoming-head {
+        color:#777b8c;
+        font-size:17px;
+        font-weight:500;
+        margin-bottom: 50px;
+    }
+    .live {
+        width: 87px;
+        height: 34px;
+        background-color: #de9dff;
+        color: #ffffff;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius:5px;
+        margin-left:21px;
+    }
+    .oval {
+        width: 8px;
+        height: 8px;
+        background-color: #ffffff;
+        display:block;
+        border-radius: 50%;
+        margin-right: 5px;
+      }
     .card-title {
         font-size:17px;
         color: #1f2a55;
         text-align:left;
-
+        border-bottom: solid 2px #e2ebef;
+        padding-bottom: 20px;
+        font-weight: 700;
+        line-height: 24px;
     }
     .card-body {
         text-align:left;
+        min-height:430px;
         .sm-txt {
             font-size:12px;
             color:#777b8c;
             font-weight: 500;
+            
         }
         .standard {
             font-size:14px;
@@ -75,5 +113,102 @@ export const Sqwrapper = styled.div`
             font-weight: 600;
             padding: 0px 17px;
         }
+        .tagList {
+            display:flex;
+            list-style:none;
+            padding:0;
+            margin-bottom: 8px;
+            padding-top: 16px;
+            li {
+                margin-right:8px;
+                .tagGreen {
+                    background:#dffef8;
+                    font-size:12px;
+                    border-radius:3px;
+                    min-height:24px;
+                    display:block;
+                    color:#0bc29f;
+                    padding: 5px 8px;
+                }
+            }
+        }
+        .champList {
+            display:flex;
+            list-style:none;
+            padding:0;
+            li {
+                margin-right:2px;
+                .tagOrange {
+                    background:#fff4d6;
+                    font-size:12px;
+                    border-radius:3px;
+                    min-height:24px;
+                    display:block;
+                    color:#f5bc1c;
+                    padding: 5px 8px;
+                }
+                img {
+                    width: 25px;
+                    margin-left: -3px;
+                }
+            }
+        }
+        .scheduleList {
+            line-height:30px;
+            padding-left:0;
+            border-bottom: solid 2px #e2ebef;
+            padding-bottom:15px;
+            li {
+                font-size:14px;
+                font-weight:300;
+                color:#1f2a55;
+                display: flex;
+                align-items: center;
+                span {
+                    display: flex;
+                    margin-right: 21px;
+                    width: 21px;
+                    justify-content: center;
+                    margin-right: 18px;
+                }
+            }
+        }
+        .Enroll {
+            color:#076fec;
+            font-size:14px;
+            font-weight: 600;
+            letter-spacing:2px;
+        }
+        .amt {
+            font-size:14px;
+            color:#1f2a55;
+            font-weight: 600;
+            
+        }
     }
+    
+`;
+export const FeatureWrap = styled.div`
+    position:relative;
+    .featureTag {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        font-size: 12px;
+        background: rgba(0, 0, 0, 0.38);
+        letter-spacing: 2px;
+        color: #ffffff;
+        font-weight: 100;
+        padding: 4px 16px;
+        border-radius: 5px;
+        text-align: center;
+        text-transform:uppercase;
+    }
+    img {
+        height: 232px;
+        object-fit: cover;
+    }
+`;
+export const Footer = styled.div`
+
 `;

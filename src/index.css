@@ -3,6 +3,9 @@ body {
   font-family: 'Montserrat', sans-serif !important;
 }
 
+h1, h2, h3, h4, h5 {
+  color: #1f2a55;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -35,4 +38,26 @@ code {
 
 .yellow {
   color: #fcda55;
+}
+.borderClass {
+  border-bottom: solid 2px #e2ebef;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-bottom: 15px;
+}
+.footer{
+  background-image: linear-gradient(82deg, #207cee -3%, #73caf3 119%);
+  height: 91px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+}
+.footer p {
+  margin-bottom: 0;
+}
+.footer a {
+  color: #fff;
+  font-weight: 600;
 }
