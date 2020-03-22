@@ -1,21 +1,24 @@
 import React, {useState} from 'react';
+import { withRouter } from 'react-router-dom';
 import { Container, Navbar, Nav, Button } from 'react-bootstrap'
 import logo from '../Assets/logo.svg'
 import Leaderboard from '../Assets/leaderboard.svg'
 import { NavRight } from '../Assets/style'
 import LocalStorageService from '../localStorageService';
 
-const Header = () => {
-    const [isLoggedIn, setAuth] = useState(LocalStorageService.getState('isLoggedIn'));
+const Header = (props) => {
+    const [isLoggedIn, setAuth] = useState(LocalStorageService.getState('isLoggedIn') === 'true');
 
     const handleLogIn = () => {
         LocalStorageService.setState('isLoggedIn', true);
         setAuth(true);
+        props.history.push('/dashboard');
     };
 
     const handleLogOut = () => {
         LocalStorageService.setState('isLoggedIn', false);
         setAuth(false);
+        props.history.push('/home');
     };
 
     return (
@@ -44,4 +47,4 @@ const Header = () => {
     );
 }
 
-export default Header;
+export default withRouter(Header);

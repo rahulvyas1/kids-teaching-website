@@ -1,27 +1,33 @@
 import React from 'react';
 import { Route, Switch, Redirect, BrowserRouter as Router } from 'react-router-dom';
 
+import LocalStorageService from './localStorageService';
+
 import Home from './containers/Home';
 import Dashboard from './containers/Dashboard';
+import Header from './layout/Header';
+import Footer from './layout/Footer';
 
 class Routes extends React.Component {
   render () {
     return (
       <Router>
+        <Header />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/home" component={Home} />
-          <PrivateRoute path="/dashboard" authToken={false} component={Dashboard} />
+          <PrivateRoute path="/dashboard" isLoggedIn={LocalStorageService.getState('isLoggedIn')} component={Dashboard} />
         </Switch>
+        <Footer />
       </Router>
     );
   }
 }
 
-const PrivateRoute = ({ component: Component, authToken, ...rest }) => (
+const PrivateRoute = ({ component: Component, isLoggedIn, ...rest }) => (
   <Route {...rest} render={props => {
-    if (!authToken) {
-      return <Redirect to={{ pathname: '/home', state: { from: props.location } }} />;
+    if (!isLoggedIn) {
+      return <Redirect to='/home' />;
     }
 
     return <Component {...props} />;
