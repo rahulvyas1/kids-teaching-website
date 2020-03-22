@@ -105,7 +105,7 @@ export const Sqwrapper = styled.div`
             font-size:12px;
             color:#777b8c;
             font-weight: 500;
-            
+
         }
         .standard {
             font-size:14px;
@@ -183,10 +183,10 @@ export const Sqwrapper = styled.div`
             font-size:14px;
             color:#1f2a55;
             font-weight: 600;
-            
+
         }
     }
-    
+
 `;
 export const FeatureWrap = styled.div`
     position:relative;
@@ -211,4 +211,29 @@ export const FeatureWrap = styled.div`
 `;
 export const Footer = styled.div`
 
+`;
+export const CardWrap = styled.div`
+    width: 208px;
+    height: 228px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border: solid 1px #ebebeb;
+    background-color: #ffffff;
+    .SampleText {
+        width: 160px;
+        height: 56px;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.4;
+        letter-spacing: 0.2px;
+        text-align: center;
+        color: #1f2a55;
+    }
+    .Group-14 {
+        width: 108px;
+        height: 108px;
+        object-fit: contain;
+    }
 `;
