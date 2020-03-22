@@ -1,10 +1,7 @@
 import React from 'react'
 import BannerComponent from '../components/BannerComponent';
-import { Container, Navbar, Nav, Button, Row, Col, Card } from 'react-bootstrap'
-import logo from '../Assets/logo.svg'
-import Leaderboard from '../Assets/leaderboard.svg'
+import { Container, Row, Col, Card } from 'react-bootstrap'
 import CampCoin from '../Assets/campcoins.svg'
-import BannerImg from '../Assets/header-photo.png'
 import AndroidThumb from '../Assets/and.jpg'
 import Grades from '../Assets/grades.svg'
 import Req from '../Assets/req.svg'
@@ -14,8 +11,7 @@ import TimeIcon from '../Assets/time.svg'
 import WatchIcon from '../Assets/watch.svg'
 import Lappy from '../Assets/lappy.jpg'
 import Virtual from '../Assets/vitual.jpg'
-import { NavRight, BannerWrapper, PaddingWrapper, Sqwrapper,FeatureWrap } from '../Assets/style'
-
+import { Sqwrapper, FeatureWrap } from '../Assets/style'
 
 const Home = () => {
     return (
@@ -37,11 +33,11 @@ const Home = () => {
                                 <Card.Text>
                                 <Row className="borderClass">
                                     <Col expand="md">
-                                        <img src={Grades} /> <span className="sm-txt">GRADES</span> <br/>
+                                        <img src={Grades} alt={'Grades'} /> <span className="sm-txt">GRADES</span> <br/>
                                         <span className="standard">4 - 8</span>
                                     </Col>
                                     <Col expand="md" className="text-center">
-                                        <img src={Req} /> <span className="sm-txt">PRE-REQ</span> <br/>
+                                        <img src={Req} alt={'Req'} /> <span className="sm-txt">PRE-REQ</span> <br/>
                                         <span className="standard">Yes</span>
                                     </Col>
                                 </Row>
@@ -75,7 +71,7 @@ const Home = () => {
                                         <span className="amt">Rs. 6,000</span>
                                     </Col>
                                     <Col className="text-right">
-                                        <a className="Enroll" href="">ENROLL</a>
+                                        <a className="Enroll" href="/#">ENROLL</a>
                                     </Col>
                                 </Row>
                             </Card.Body>
@@ -92,11 +88,11 @@ const Home = () => {
                                 <Card.Text>
                                 <Row className="borderClass">
                                     <Col expand="md">
-                                        <img src={Grades} /> <span className="sm-txt">GRADES</span> <br/>
+                                        <img alt={'Grades'} src={Grades} /> <span className="sm-txt">GRADES</span> <br/>
                                         <span className="standard">4 - 8</span>
                                     </Col>
                                     <Col expand="md" className="text-center">
-                                        <img src={Req} /> <span className="sm-txt">PRE-REQ</span> <br/>
+                                        <img alt={'Req'} src={Req} /> <span className="sm-txt">PRE-REQ</span> <br/>
                                         <span className="standard">Yes</span>
                                     </Col>
                                 </Row>
@@ -130,7 +126,7 @@ const Home = () => {
                                         <span className="amt">Rs. 6,000</span>
                                     </Col>
                                     <Col className="text-right">
-                                        <a className="Enroll" href="">ENROLL</a>
+                                        <a className="Enroll" href="/#">ENROLL</a>
                                     </Col>
                                 </Row>
                             </Card.Body>
@@ -147,11 +143,11 @@ const Home = () => {
                                 <Card.Text>
                                 <Row className="borderClass">
                                     <Col expand="md">
-                                        <img src={Grades} /> <span className="sm-txt">GRADES</span> <br/>
+                                        <img src={Grades} alt={'Grades'}/> <span className="sm-txt">GRADES</span> <br/>
                                         <span className="standard">4 - 8</span>
                                     </Col>
                                     <Col expand="md" className="text-center">
-                                        <img src={Req} /> <span className="sm-txt">PRE-REQ</span> <br/>
+                                        <img src={Req} alt={'Req'} /> <span className="sm-txt">PRE-REQ</span> <br/>
                                         <span className="standard">Yes</span>
                                     </Col>
                                 </Row>
@@ -185,7 +181,7 @@ const Home = () => {
                                         <span className="amt">Rs. 6,000</span>
                                     </Col>
                                     <Col className="text-right">
-                                        <a className="Enroll" href="">ENROLL</a>
+                                        <a className="Enroll" href="/#">ENROLL</a>
                                     </Col>
                                 </Row>
                             </Card.Body>
