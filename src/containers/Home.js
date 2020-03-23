@@ -12,14 +12,16 @@ import TimeIcon from '../Assets/time.svg'
 import WatchIcon from '../Assets/watch.svg'
 import Lappy from '../Assets/lappy.jpg'
 import Virtual from '../Assets/vitual.jpg'
-import { Sqwrapper, FeatureWrap } from '../Assets/style'
+import { Sqwrapper, FeatureWrap, SliderWrap } from '../Assets/style'
 
 const Home = () => {
     return (
         <>
         <BannerComponent />
         <Sqwrapper>
-            <ReactSlick />
+            <SliderWrap>
+                <ReactSlick />
+            </SliderWrap>
             <h3>Upcoming online courses <span className="live"><span className="oval"></span>LIVE</span></h3>
             <p className="upcoming-head">Learn from live teachers, not pre-recorded videos, in our intelligent virtual classrooms.  <br/> <img src={SkillIcon} alt="SkillIcon" /> = 21st century skills you’ll unlock <img src={CampCoin} alt="CampCoin" /> = coins you’ll earn for completion</p>
             <Container>

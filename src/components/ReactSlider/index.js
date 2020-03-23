@@ -6,11 +6,12 @@ import GroupIcon from '../../Assets/group-14.svg';
 import MRIcon from '../../Assets/mr-icon.svg';
 import Icon from '../../Assets/icon.svg';
 import Group3Icon from '../../Assets/group-3.svg';
+import VrIcon from '../../Assets/vr.svg';
 import { CardWrap } from '../../Assets/style'
 
 const ReactSlick = () => {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 4,
@@ -23,29 +24,19 @@ const ReactSlick = () => {
         <CardWrap>
             <Card className="text-center">
                 <Card.Body>
-                    <img className='Group-14' src={Icon} alt="Icon" />
-                    <Card.Text className='SampleText'>
-                        Mobile App Development
-                    </Card.Text>
-                </Card.Body>
-                </Card>
-          </CardWrap>
-          <CardWrap>
-            <Card className="text-center">
-                <Card.Body>
                     <img className='Group-14' src={GroupIcon} alt="GroupIcon" />
-                    <Card.Text className='SampleText'>
-                        Web development
+                    <Card.Text className='text-center'>
+                        Web <br/> development
                     </Card.Text>
                 </Card.Body>
                 </Card>
           </CardWrap>
-          <CardWrap>
+        <CardWrap>
             <Card className="text-center">
                 <Card.Body>
                     <img className='Group-14' src={Icon} alt="Icon" />
-                    <Card.Text className='SampleText'>
-                        Mobile App Development
+                    <Card.Text className='text-center'>
+                        Mobile App <br/> Development
                     </Card.Text>
                 </Card.Body>
                 </Card>
@@ -53,9 +44,9 @@ const ReactSlick = () => {
           <CardWrap>
             <Card className="text-center">
                 <Card.Body>
-                    <img className='Group-14' src={MRIcon} alt="MRIcon" />
-                    <Card.Text className='SampleText'>
-                        Mixed Reality (AR/VR)
+                    <img className='Group-14' src={VrIcon} alt="Icon" />
+                    <Card.Text className='text-center'>
+                        Mixed Reality <br/> (AR/VR)
                     </Card.Text>
                 </Card.Body>
                 </Card>
@@ -63,9 +54,19 @@ const ReactSlick = () => {
           <CardWrap>
             <Card className="text-center">
                 <Card.Body>
-                    <img className='Group-14' src={Group3Icon} alt="Group3Icon" />
-                    <Card.Text className='SampleText'>
-                        Web development
+                    <img className='Group-14' src={Group3Icon} alt="MRIcon" />
+                    <Card.Text className='text-center'>
+                        Machine <br/> Learning (AI)
+                    </Card.Text>
+                </Card.Body>
+                </Card>
+          </CardWrap>
+          <CardWrap>
+            <Card className="text-center">
+                <Card.Body>
+                    <img className='Group-14' src={Group3Icon} alt="MRIcon" />
+                    <Card.Text className='text-center'>
+                        Machine <br/> Learning (AI)
                     </Card.Text>
                 </Card.Body>
                 </Card>

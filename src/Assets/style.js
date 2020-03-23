@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import HeaderImg from '../Assets/header-background.png';
-
+import shapeLeft from '../Assets/shapeLeft.svg';
+import shapeRight from '../Assets/shapeRight.svg';
 
 export const NavRight = styled.div`
     button {
@@ -235,5 +236,51 @@ export const CardWrap = styled.div`
         width: 108px;
         height: 108px;
         object-fit: contain;
+    }
+`;
+export const SliderWrap = styled.div`
+    position:relative;
+    margin-bottom:-50px;
+    top: -120px;
+    .slick-slide {
+        width:250px !important;
+        img {
+            margin: 0 auto;
+            width:90px;
+        }
+    }
+    .slick-track{
+        display: flex !important;
+        justify-content: space-around;
+    }
+    .slick-prev:before{
+        background-image: url(${shapeLeft});
+        content: '' !important;
+        display: flex;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-color: #fff;
+        width: 38px;
+        height: 38px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+        border: solid 1px #ebebeb;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+    }
+    .slick-next:before {
+        background-image: url(${shapeRight});
+        content: '' !important;
+        display: flex;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-color: #fff;
+        width: 38px;
+        height: 38px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+        border: solid 1px #ebebeb;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
     }
 `;
