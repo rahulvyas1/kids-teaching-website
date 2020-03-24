@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import HeaderImg from '../Assets/header-background.png';
 import shapeLeft from '../Assets/shapeLeft.svg';
 import shapeRight from '../Assets/shapeRight.svg';
-
+import AngleDown from '../Assets/angleDown.svg'
 export const NavRight = styled.div`
     button {
         background-color: rgba(255, 255, 255, 0.27);
@@ -321,30 +321,46 @@ export const TabsWrapper = styled.div`
     border-radius: 4px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
     margin:auto;
-`;
-
-export const TabsContainer = styled.div`
-    width: 421px;
-    height: 48px;
-    display: flex;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
-    border: solid 1px #d8e4eb;
-    background-color: #ffffff;
-`;
-
-export const TabBox = styled.div`
-    width: 140px;
-    height: 15px;
-    font-family: Montserrat;
-    font-size: 12px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.5px;
-    text-align: center;
-    color: #1f2a55;
+    .tab-pane {
+        padding:50px;
+    }
+    .fliterDrop {
+    &.show {
+        .dropdown-toggle {
+            color: #1f2a55 !important;
+        }
+        
+    }
+        button {
+            border-radius: 4px;
+            border: solid 1px #d8e4eb;
+            background-color: #ffffff !important;
+            color: #1f2a55;
+            font-size:12px;
+            min-width:238px;
+            text-align:left;
+         
+        }
+        .dropdown-item {
+            border:none;
+            border-bottom: solid 1px #d8e4eb;
+            &:last-child {
+                border:none;
+            }
+        }
+        
+        .dropdown-toggle::after {
+            position:absolute;
+            right:11px;
+            top:12px;
+            border:none;
+            background-image: url(${AngleDown});
+            width: 13px;
+            height: 8px;
+            background-size: 10px;
+            background-repeat: no-repeat;
+        }
+    }
 `;
 
 export const FilterContainer = styled.div`
@@ -352,8 +368,87 @@ export const FilterContainer = styled.div`
     justify-content: space-between;
 `;
 
-export const ActiveRectangle = styled.div`
-    width: 140px;
-    height: 48px;
-    background-color: #076fec;
+
+export const FlexWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    .nav-item {
+        border-radius: 4px 0 0 4px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
+        border: solid 1px #d8e4eb;
+        background-color: #ffffff;
+        &:nth-child(2) {
+            border-radius:0;
+        }
+        &:nth-child(3) {
+            border-radius:0 4px 4px 0;
+        }
+    }
+  
+`;
+export const FilterWrapper = styled.div`
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:45px;
+    p {
+        margin-bottom:0;
+    }
+`;
+export const RCardWrap = styled.div`
+    .levelGrade {
+        display:flex;
+        p {
+            font-size:12px;
+            color:#aaafbf;
+            font-weight:500;
+            text-transform:uppercase;
+            margin-right: 25px;
+            margin-bottom: 0;
+            margin-top: 10px;
+            span {
+                color:#353f66;
+                margin-left:5px;
+            }
+        }
+    }
+    .sdetail {
+        padding-left:0;
+        list-style:none;
+        .text-detail {
+            vertical-align: middle;
+            font-size:14px;
+        }
+        li {
+            img {
+                margin-right:14px;
+            }
+        }
+    }
+    .d-flex {
+        img {
+            width:75px;
+        }
+        .amt {
+            color:#1f2a55;
+            font-size:18px;
+        }
+        strike {
+            color:#7c829b;
+            font-size:14px;
+        }
+    }
+    .learnMore {
+        letter-spacing:2px;
+        margin: auto;
+        text-align: center;
+        display: block;
+    }
+    .card-text {
+        border-bottom:2px solid #ddd;
+        padding-bottom:22px;
+    }
+    .card-body {
+        min-height:auto;
+    }
 `;
