@@ -322,3 +322,38 @@ export const TabsWrapper = styled.div`
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
     margin:auto;
 `;
+
+export const TabsContainer = styled.div`
+    width: 421px;
+    height: 48px;
+    display: flex;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
+    border: solid 1px #d8e4eb;
+    background-color: #ffffff;
+`;
+
+export const TabBox = styled.div`
+    width: 140px;
+    height: 15px;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #1f2a55;
+`;
+
+export const FilterContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+`;
+
+export const ActiveRectangle = styled.div`
+    width: 140px;
+    height: 48px;
+    background-color: #076fec;
+`;

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import LearnIcon from '../Assets/learn.svg'
-import { BannerWrapper, PaddingWrapper, BannerCard, TabsWrapper, Sqwrapper } from '../Assets/style'
+import { BannerWrapper, PaddingWrapper, BannerCard, Sqwrapper } from '../Assets/style'
+import TabsComponent from '../components/TabsComponent';
 const Dashboard = () => {
     return (
         <>
@@ -44,9 +45,7 @@ const Dashboard = () => {
                 </Container>
             </BannerWrapper>
             <Sqwrapper className="inner">
-                <TabsWrapper>
-                    Add tab here
-                </TabsWrapper>
+                <TabsComponent />
             </Sqwrapper>
         </>
     );
