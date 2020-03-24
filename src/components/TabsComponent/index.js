@@ -27,7 +27,7 @@ const TabsComponent = () => {
                 </Nav>
                
             <Tab.Content>
-                <Tab.Pane eventKey="first" active>
+                <Tab.Pane eventKey="first">
                     <FilterWrapper>
                       <p>Showing All courses for Grades 5-8</p>
                       <DropdownButton className="fliterDrop" id="dropdown-item-button" title="All Courses">

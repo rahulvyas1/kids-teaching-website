@@ -321,6 +321,10 @@ export const TabsWrapper = styled.div`
     border-radius: 4px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
     margin:auto;
+    .nav-pills {
+        position: relative;
+        top: -19px;
+    }
     .tab-pane {
         padding:50px;
     }
