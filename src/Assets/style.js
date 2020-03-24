@@ -31,6 +31,12 @@ export const PaddingWrapper = styled.div`
         font-size:52px;
         font-weight: 500;
     }
+    h2 {
+        color:#ffffff;
+        font-size:40px;
+        font-weight:600;
+        margin-bottom:30px;
+    }
     .subhead {
         text-align:left;
         color:#fff;
@@ -56,6 +62,9 @@ export const Sqwrapper = styled.div`
     right: 0;
     top: -146px;
     clip-path: ellipse(53% 58% at 50% 103%);
+}
+&.inner:before {
+    display:none;
 }
     h3 {
         font-size:32px;
@@ -283,4 +292,33 @@ export const SliderWrap = styled.div`
         justify-content: center;
         background-position: center;
     }
+`;
+
+export const BannerCard = styled.div`
+    text-align:left;
+    h3 {
+        color:#ffffff;
+        font-size:18px;
+        font-weight:600;
+    }
+    p, a {
+        font-size:14px;
+        color:#fff;
+        font-weight: 100;
+    }
+    a {
+        text-decoration:underline;
+        margin-left:5px;
+    }
+    img {
+        margin-bottom: 16px;
+    }
+`;
+export const TabsWrapper = styled.div`
+    background:#fff;
+    min-height:250px;
+    width:90%;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    margin:auto;
 `;
