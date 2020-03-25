@@ -22,7 +22,7 @@ const Header = (props) => {
     };
 
     return (
-        <Navbar expand="lg" className="mainMenu" fixed="top">
+        <Navbar expand="lg" className={`mainMenu ${props.activeClass}`} fixed="top">
             <Container>
                 <Navbar.Brand href="#home"><img src={logo} alt={'logo'} /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
