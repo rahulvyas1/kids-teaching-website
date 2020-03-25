@@ -23,7 +23,7 @@ const Home = () => {
                     {courses.map(course => <CoursesGrid {...course} />)}
                 </Row>
             </Container>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            
         </Sqwrapper>
       </>
     );

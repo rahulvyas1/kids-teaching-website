@@ -21,6 +21,21 @@ export const NavRight = styled.div`
 
 export const BannerWrapper = styled.div`
     background-image: url(${HeaderImg});
+    min-height: 680px;
+    position: relative;
+    background-size: cover;
+    &:before {
+        content: '';
+        background-image: linear-gradient(to top,#eef9ff -10%,#ade1ff);
+        position: absolute;
+        height: 146px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        clip-path: ellipse(53% 58% at 50% 103%);
+    }
+   
 `;
 
 export const PaddingWrapper = styled.div`
@@ -52,17 +67,7 @@ export const Sqwrapper = styled.div`
     background-image: linear-gradient(to bottom, #eef9ff -10%, #ade1ff);
     position:relative;
     top:0;
-&:before {
-    content: '';
-    background-image: linear-gradient(to top,#eef9ff -10%,#ade1ff);
-    position: absolute;
-    height: 146px;
-    width: 100%;
-    left: 0;
-    right: 0;
-    top: -146px;
-    clip-path: ellipse(53% 58% at 50% 103%);
-}
+    padding-bottom:55px;
 &.inner:before {
     display:none;
 }
@@ -90,6 +95,10 @@ export const Sqwrapper = styled.div`
         align-items: center;
         border-radius:5px;
         margin-left:21px;
+        transition:300ms;
+        &:hover {
+            background:#b777d8;
+        }
     }
     .oval {
         width: 8px;
@@ -213,6 +222,10 @@ export const FeatureWrap = styled.div`
         border-radius: 5px;
         text-align: center;
         text-transform:uppercase;
+        transition:300ms;
+        &:hover {
+            background:rgba(0, 0, 0, 0.91);
+        }
     }
     img {
         height: 232px;
@@ -220,14 +233,13 @@ export const FeatureWrap = styled.div`
     }
 `;
 export const Footer = styled.div`
-
+    
 `;
 export const CardWrap = styled.div`
     width: 208px;
     height: 228px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    border: solid 1px #ebebeb;
-    background-color: #ffffff;
+   
+    
     .SampleText {
         width: 160px;
         height: 56px;
@@ -249,10 +261,22 @@ export const CardWrap = styled.div`
 `;
 export const SliderWrap = styled.div`
     position:relative;
-    margin-bottom:-50px;
-    top: -120px;
+    margin-bottom: 0px;
+    .card {
+        border:none;
+        background:transparent;
+    }
+    .card-body {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.02);
+        min-height: 227px;
+    }
+    .slick-slider {
+        z-index:2;
+        top: -120px;
+    }
     .slick-slide {
-        width:250px !important;
+        width:244px !important;
+        background:#ffffff;
         img {
             margin: 0 auto;
             width:90px;
