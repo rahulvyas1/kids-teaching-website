@@ -61,7 +61,7 @@ export const BannerWrapper = styled.div`
 export const PaddingWrapper = styled.div`
     padding: 145px 0;
     @media screen and (max-width: 767px) {
-        padding: 145px 104px 
+        padding: 145px 0; 
     }
     h1 {
         color:#fff;
