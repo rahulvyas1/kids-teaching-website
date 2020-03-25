@@ -17,6 +17,14 @@ export const NavRight = styled.div`
     a {
         margin-right:15px;
     }
+    @media screen and (max-width: 800px) {
+        text-align:left;
+        display: flex;
+        flex-direction: column;
+        img {
+            margin-bottom:10px;
+        }
+    }
 `;
 
 export const BannerWrapper = styled.div`
@@ -24,6 +32,11 @@ export const BannerWrapper = styled.div`
     min-height: 680px;
     position: relative;
     background-size: cover;
+    @media (min-width: 980px){
+        .order2 {
+            order:2;
+        }
+    }
     &:before {
         content: '';
         background-image: linear-gradient(to top,#eef9ff -10%,#ade1ff);
@@ -45,6 +58,9 @@ export const PaddingWrapper = styled.div`
         text-align:left;
         font-size:52px;
         font-weight: 500;
+        @media screen and (max-width: 800px) {
+            font-size:37px;
+        }
     }
     h2 {
         color:#ffffff;
@@ -68,6 +84,12 @@ export const Sqwrapper = styled.div`
     position:relative;
     top:0;
     padding-bottom:55px;
+    @media screen and (max-width: 800px){
+    .card {
+        margin-bottom:30px;
+    }
+}
+    
 &.inner:before {
     display:none;
 }
@@ -83,6 +105,12 @@ export const Sqwrapper = styled.div`
         font-size:17px;
         font-weight:500;
         margin-bottom: 50px;
+        @media screen and (max-width: 800px) {
+            width: 70%;
+            margin: 25px auto;
+        }
+    }
+        
     }
     .live {
         width: 87px;
@@ -108,6 +136,7 @@ export const Sqwrapper = styled.div`
         border-radius: 50%;
         margin-right: 5px;
       }
+    
     .card-title {
         font-size:17px;
         color: #1f2a55;

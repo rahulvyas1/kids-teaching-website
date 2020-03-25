@@ -11,10 +11,15 @@ code {
     monospace;
 }
 .mainMenu {
-  top: 32px !important;
+  top: 0 !important;
+  height: 77px;
 }
 .normal {
   background-color: #2886ee;
+  box-shadow: 0 2px 4px rgba(0,0,0,.43);
+}
+.navbar-brand img {
+  width:115px;
 }
 .navbar-nav a{
   color: #ffffff !important;
@@ -72,4 +77,30 @@ code {
   text-align: left;
   float: left;
   margin-top: 32px;
+}
+@media screen and (max-width: 800px) {
+  .navbar-light .navbar-toggler-icon {
+    background-image: url(../src/Assets/ham.svg) !important;
+  }
+  .navbar-light .navbar-toggler {
+    border-color: rgb(255, 255, 255) !important; 
+  }
+  .navbar-collapse {
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  }
+  .navbar-collapse .nav-link {
+    color: #000 !important;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .navbar-collapse .nav-link:hover {
+    border-bottom: 2px solid rgb(40, 134, 238);;
+  }
+  .navbar-collapse button.btn-primary {
+    background-color: rgb(40, 134, 238);
+    color:#ffffff;
+    margin-bottom: 10px;
+  }
 }

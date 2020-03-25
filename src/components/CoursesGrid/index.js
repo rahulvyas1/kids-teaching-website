@@ -18,7 +18,7 @@ const CoursesGrid = props => {
                     <Card.Img variant="top" src={icon} />
                     <span class="featureTag">{label}</span>
                 </FeatureWrap>
-                <Card.Body>
+                <Card.Body className="home-cards">
                     <Card.Title>{title} <br/> {lavel}</Card.Title>
                     <Card.Text>
                     <Row className="borderClass">

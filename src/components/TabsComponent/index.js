@@ -27,15 +27,8 @@ const TabsComponent = () => {
                       </Nav.Item>
                     </FlexWrapper>
                 </Nav>
-<<<<<<< HEAD
-               
-            <Tab.Content>
-                <Tab.Pane eventKey="first" active>
-=======
-
             <Tab.Content defaultActiveKey={'first'}>
                 <Tab.Pane eventKey="first">
->>>>>>> 37eb973dbdded67d1ccaed83b4168c19d70a67db
                     <FilterWrapper>
                       <p>Showing All courses for Grades 5-8</p>
                       <DropdownButton className="fliterDrop" id="dropdown-item-button" title="All Courses">
