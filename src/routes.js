@@ -1,8 +1,6 @@
 import React from 'react';
 import { Route, Switch, Redirect, BrowserRouter as Router } from 'react-router-dom';
 
-import LocalStorageService from './localStorageService';
-
 import Home from './containers/Home';
 import Dashboard from './containers/Dashboard';
 import Header from './layout/Header';
@@ -10,7 +8,8 @@ import Footer from './layout/Footer';
 
 class Routes extends React.Component {
   state = {
-    activeClass: 'top'
+    activeClass: 'top',
+    isLoggedIn: false
   }
   componentDidMount(){
     window.addEventListener('scroll', () => {
@@ -23,14 +22,27 @@ class Routes extends React.Component {
     });
   }
 
+  handleLogIn = () => {
+    this.setState({isLoggedIn: true});
+  };
+
+  handleLogOut = () => {
+    this.setState({isLoggedIn: false});
+  };
+
   render () {
+    const {isLoggedIn, activeClass} = this.state;
     return (
       <Router>
-        <Header activeClass={ this.state.activeClass } />
+        <Header
+          activeClass={ activeClass }
+          isLoggedIn={isLoggedIn}
+          handleLogOut={this.handleLogOut}
+          handleLogIn={this.handleLogIn}/>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/home" component={Home} />
-          <PrivateRoute path="/dashboard" isLoggedIn={LocalStorageService.getState('isLoggedIn')} component={Dashboard} />
+          <PrivateRoute path="/dashboard" isLoggedIn={isLoggedIn} component={Dashboard} />
         </Switch>
         <Footer />
       </Router>

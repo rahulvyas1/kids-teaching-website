@@ -1,23 +1,18 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { Container, Navbar, Nav, Button } from 'react-bootstrap'
 import logo from '../Assets/logo.svg'
 import Leaderboard from '../Assets/leaderboard.svg'
 import { NavRight } from '../Assets/style'
-import LocalStorageService from '../localStorageService';
 
 const Header = (props) => {
-    const [isLoggedIn, setAuth] = useState(LocalStorageService.getState('isLoggedIn') === 'true');
-
     const handleLogIn = () => {
-        LocalStorageService.setState('isLoggedIn', true);
-        setAuth(true);
+        props.handleLogIn();
         props.history.push('/dashboard');
     };
 
     const handleLogOut = () => {
-        LocalStorageService.setState('isLoggedIn', false);
-        setAuth(false);
+        props.handleLogOut();
         props.history.push('/home');
     };
 
@@ -27,7 +22,7 @@ const Header = (props) => {
                 <Navbar.Brand href="#home"><img src={logo} alt={'logo'} /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    {isLoggedIn
+                    {props.isLoggedIn
                         ? <NavRight><Button variant="primary" onClick={handleLogOut}>LOG OUT</Button></NavRight>
                         : <>
                             <Nav className="mr-auto">
