@@ -78,6 +78,10 @@ code {
   float: left;
   margin-top: 32px;
 }
+.learnMore:hover {
+  text-decoration: none !important;
+  background: #dffef8;
+}
 @media screen and (max-width: 800px) {
   .navbar-light .navbar-toggler-icon {
     background-image: url(../src/Assets/ham.svg) !important;
