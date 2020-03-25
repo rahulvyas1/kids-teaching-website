@@ -14,6 +14,7 @@ const TabsComponent = () => {
     return (
         <TabsWrapper>
            <TabContainer>
+           <Tab.Container id="left-tabs-example" defaultActiveKey="first">
             <Nav variant="pills" className="flex-column" onSelect={(selectedKey) => setTabState(selectedKey)}>
                 <FlexWrapper>
                       <Nav.Item>
@@ -27,10 +28,11 @@ const TabsComponent = () => {
                       </Nav.Item>
                     </FlexWrapper>
                 </Nav>
-            <Tab.Content defaultActiveKey={'first'}>
+
+            <Tab.Content>
                 <Tab.Pane eventKey="first">
                     <FilterWrapper>
-                      <p>Showing All courses for Grades 5-8</p>
+                      <p>Showing All courses for Grades 1-4</p>
                       <DropdownButton className="fliterDrop" id="dropdown-item-button" title="All Courses">
                         <Dropdown.Item as="button">Action</Dropdown.Item>
                         <Dropdown.Item as="button">Another action</Dropdown.Item>
@@ -47,7 +49,7 @@ const TabsComponent = () => {
                                 AI & Machine  Learning : <br/> Code Intelligent Bots
                                 <div className="levelGrade">
                                   <p>Level <span>1</span></p>
-                                  <p>Level <span>5-8</span></p>
+                                  <p>Level <span>1-4</span></p>
                                 </div>
                               </Card.Title>
 
@@ -74,7 +76,7 @@ const TabsComponent = () => {
                                 AI & Machine  Learning : <br/> Code Intelligent Bots
                                 <div className="levelGrade">
                                   <p>Level <span>1</span></p>
-                                  <p>Level <span>5-8</span></p>
+                                  <p>Level <span>1-4</span></p>
                                 </div>
                               </Card.Title>
 
@@ -101,7 +103,7 @@ const TabsComponent = () => {
                                 AI & Machine  Learning : <br/> Code Intelligent Bots
                                 <div className="levelGrade">
                                   <p>Level <span>1</span></p>
-                                  <p>Level <span>5-8</span></p>
+                                  <p>Level <span>1-4</span></p>
                                 </div>
                               </Card.Title>
 
@@ -124,6 +126,14 @@ const TabsComponent = () => {
                     </RCardWrap>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
+                <FilterWrapper>
+                      <p>Showing All courses for Grades 5-8</p>
+                      <DropdownButton className="fliterDrop" id="dropdown-item-button" title="All Courses">
+                        <Dropdown.Item as="button">Action</Dropdown.Item>
+                        <Dropdown.Item as="button">Another action</Dropdown.Item>
+                        <Dropdown.Item as="button">Something else</Dropdown.Item>
+                      </DropdownButton>
+                    </FilterWrapper>
                 <RCardWrap>
                       <Row>
                         <Col>
@@ -211,6 +221,14 @@ const TabsComponent = () => {
                     </RCardWrap>
                 </Tab.Pane>
                 <Tab.Pane eventKey="third">
+                <FilterWrapper>
+                      <p>Showing All courses for Grades 9-12</p>
+                      <DropdownButton className="fliterDrop" id="dropdown-item-button" title="All Courses">
+                        <Dropdown.Item as="button">Action</Dropdown.Item>
+                        <Dropdown.Item as="button">Another action</Dropdown.Item>
+                        <Dropdown.Item as="button">Something else</Dropdown.Item>
+                      </DropdownButton>
+                    </FilterWrapper>
                 <RCardWrap>
                       <Row>
                         <Col>
@@ -221,7 +239,7 @@ const TabsComponent = () => {
                                 AI & Machine  Learning : <br/> Code Intelligent Bots
                                 <div className="levelGrade">
                                   <p>Level <span>1</span></p>
-                                  <p>Level <span>5-8</span></p>
+                                  <p>Level <span>9-12</span></p>
                                 </div>
                               </Card.Title>
 
@@ -248,7 +266,7 @@ const TabsComponent = () => {
                                 AI & Machine  Learning : <br/> Code Intelligent Bots
                                 <div className="levelGrade">
                                   <p>Level <span>1</span></p>
-                                  <p>Level <span>5-8</span></p>
+                                  <p>Level <span>9-12</span></p>
                                 </div>
                               </Card.Title>
 
@@ -275,7 +293,7 @@ const TabsComponent = () => {
                                 AI & Machine  Learning : <br/> Code Intelligent Bots
                                 <div className="levelGrade">
                                   <p>Level <span>1</span></p>
-                                  <p>Level <span>5-8</span></p>
+                                  <p>Level <span>9-12</span></p>
                                 </div>
                               </Card.Title>
 
@@ -298,6 +316,7 @@ const TabsComponent = () => {
                     </RCardWrap>
                 </Tab.Pane>
             </Tab.Content>
+            </Tab.Container>
            </TabContainer>
 
         </TabsWrapper>
