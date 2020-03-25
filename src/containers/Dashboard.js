@@ -43,7 +43,9 @@ const Dashboard = () => {
                                 </BannerCard>
                             </Col>
                         </Row>
-                        <Button className="Book" variant="primary">BOOK A FREE TRIAL</Button>
+                        <div className="rsTextCenter">
+                            <Button className="Book" variant="primary">BOOK A FREE TRIAL</Button>
+                        </div>
                     </PaddingWrapper>
                 </Container>
             </BannerWrapper>
