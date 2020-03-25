@@ -41,7 +41,7 @@ const TabsComponent = () => {
                     </FilterWrapper>
                     <RCardWrap>
                       <Row>
-                        <Col>
+                        <Col expand="xl">
                           <Card style={{ width: '' }}>
                             <Card.Img variant="top" src={HolderImg} />
                             <Card.Body>
@@ -68,7 +68,7 @@ const TabsComponent = () => {
                             </Card.Body>
                           </Card>
                         </Col>
-                        <Col>
+                        <Col expand="xl">
                         <Card style={{ width: '' }}>
                             <Card.Img variant="top" src={HolderImg} />
                             <Card.Body>
@@ -95,7 +95,7 @@ const TabsComponent = () => {
                             </Card.Body>
                           </Card>
                         </Col>
-                        <Col>
+                        <Col expand="xl">
                         <Card style={{ width: '' }}>
                             <Card.Img variant="top" src={HolderImg} />
                             <Card.Body>
@@ -136,7 +136,7 @@ const TabsComponent = () => {
                     </FilterWrapper>
                 <RCardWrap>
                       <Row>
-                        <Col>
+                        <Col expand="xl">
                           <Card style={{ width: '' }}>
                             <Card.Img variant="top" src={HolderImg} />
                             <Card.Body>
@@ -163,7 +163,7 @@ const TabsComponent = () => {
                             </Card.Body>
                           </Card>
                         </Col>
-                        <Col>
+                        <Col expand="xl">
                         <Card style={{ width: '' }}>
                             <Card.Img variant="top" src={HolderImg} />
                             <Card.Body>
@@ -190,7 +190,7 @@ const TabsComponent = () => {
                             </Card.Body>
                           </Card>
                         </Col>
-                        <Col>
+                        <Col expand="xl">
                         <Card style={{ width: '' }}>
                             <Card.Img variant="top" src={HolderImg} />
                             <Card.Body>
@@ -231,7 +231,7 @@ const TabsComponent = () => {
                     </FilterWrapper>
                 <RCardWrap>
                       <Row>
-                        <Col>
+                        <Col expand="xl">
                           <Card style={{ width: '' }}>
                             <Card.Img variant="top" src={HolderImg} />
                             <Card.Body>
@@ -258,7 +258,7 @@ const TabsComponent = () => {
                             </Card.Body>
                           </Card>
                         </Col>
-                        <Col>
+                        <Col expand="xl">
                         <Card style={{ width: '' }}>
                             <Card.Img variant="top" src={HolderImg} />
                             <Card.Body>
@@ -285,7 +285,7 @@ const TabsComponent = () => {
                             </Card.Body>
                           </Card>
                         </Col>
-                        <Col>
+                        <Col expand="xl">
                         <Card style={{ width: '' }}>
                             <Card.Img variant="top" src={HolderImg} />
                             <Card.Body>

@@ -60,6 +60,9 @@ export const BannerWrapper = styled.div`
 
 export const PaddingWrapper = styled.div`
     padding: 145px 0;
+    @media screen and (max-width: 767px) {
+        padding: 145px 104px 
+    }
     h1 {
         color:#fff;
         text-align:left;
@@ -74,6 +77,9 @@ export const PaddingWrapper = styled.div`
         font-size:40px;
         font-weight:600;
         margin-bottom:30px;
+        @media screen and (max-width: 767px) {
+            text-align: center !important;
+        }
     }
     .subhead {
         text-align:left;
@@ -84,6 +90,13 @@ export const PaddingWrapper = styled.div`
     }
     .row {
         align-items:center;
+        @media screen and (max-width: 768px){
+            flex-direction: column;
+            justify-content: center;
+            .col {
+
+            }
+        }
     }
 `;
 export const Sqwrapper = styled.div`
@@ -231,6 +244,17 @@ export const Sqwrapper = styled.div`
             font-size:14px;
             font-weight: 600;
             letter-spacing:2px;
+            display: flex;
+            text-align: center;
+            height: 30px;
+            justify-content: center;
+            align-items: center;
+            width: 140px;
+            transition:300ms;
+            &:hover {
+                text-decoration:none;
+                background:#dffef8;
+            }
         }
         .amt {
             font-size:14px;
@@ -371,6 +395,9 @@ export const BannerCard = styled.div`
     img {
         margin-bottom: 16px;
     }
+    @media screen and (max-width: 768px){
+        text-align:center;
+    }
 `;
 export const TabsWrapper = styled.div`
     background:#fff;
@@ -462,6 +489,12 @@ export const FilterWrapper = styled.div`
     }
 `;
 export const RCardWrap = styled.div`
+@media screen and (max-width: 767px){
+    .row {
+        flex-direction:column;
+
+    }
+}
     .levelGrade {
         display:flex;
         p {
