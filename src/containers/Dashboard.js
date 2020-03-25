@@ -9,7 +9,7 @@ import TabsComponent from '../components/TabsComponent';
 const Dashboard = () => {
     return (
         <>
-            <BannerWrapper>
+            <BannerWrapper className="inner">
                 <Container>
                     <PaddingWrapper>
                         <h2 className="text-left">ONLINE COURSES</h2>
@@ -47,7 +47,7 @@ const Dashboard = () => {
                     </PaddingWrapper>
                 </Container>
             </BannerWrapper>
-            <Sqwrapper className="inner">
+            <Sqwrapper>
                 <TabsComponent />
             </Sqwrapper>
         </>

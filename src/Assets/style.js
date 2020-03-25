@@ -32,6 +32,13 @@ export const BannerWrapper = styled.div`
     min-height: 680px;
     position: relative;
     background-size: cover;
+&.inner {
+    min-height:499px !important;
+}
+&.inner:before {
+    display:none;
+    
+}
     @media (min-width: 980px){
         .order2 {
             order:2;
@@ -90,9 +97,7 @@ export const Sqwrapper = styled.div`
     }
 }
     
-&.inner:before {
-    display:none;
-}
+
     h3 {
         font-size:32px;
         margin-bottom: 10px;
@@ -396,6 +401,7 @@ export const TabsWrapper = styled.div`
             font-size:12px;
             min-width:238px;
             text-align:left;
+            height: 40px;
          
         }
         .dropdown-item {
@@ -409,7 +415,7 @@ export const TabsWrapper = styled.div`
         .dropdown-toggle::after {
             position:absolute;
             right:11px;
-            top:12px;
+            top:17px;
             border:none;
             background-image: url(${AngleDown});
             width: 13px;
@@ -434,6 +440,9 @@ export const FlexWrapper = styled.div`
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
         border: solid 1px #d8e4eb;
         background-color: #ffffff;
+        .nav-link  {
+            padding: 10px 30px;
+        }
         &:nth-child(2) {
             border-radius:0;
         }
