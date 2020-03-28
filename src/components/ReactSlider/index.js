@@ -1,6 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
 import { Card } from 'react-bootstrap'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 import GroupIcon from '../../Assets/group-14.svg';
 import MRIcon from '../../Assets/mr-icon.svg';
@@ -10,44 +12,9 @@ import VrIcon from '../../Assets/vr.svg';
 import { CardWrap } from '../../Assets/style'
 
 const ReactSlick = () => {
-  var settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 490,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 4,
-          initialSlide: 1
-        }
-      }
-    ]
-  };
     return (
         <div className="container">
-        <Slider {...settings}>
+        {/* <Carousel>
         <CardWrap>
             <Card className="text-center">
                 <Card.Body>
@@ -98,7 +65,20 @@ const ReactSlick = () => {
                 </Card.Body>
                 </Card>
           </CardWrap>
-        </Slider>
+        </Carousel> */}
+         <Carousel>
+                <div>
+                    <img src={Group3Icon} />
+                    <p className="legend">Legend 1</p>
+                </div>
+                <div>
+                    <img src={MRIcon} />
+                    <p className="legend">Legend 2</p>
+                </div>
+                <div>
+                   <div>PRAVIN</div>
+                </div>
+            </Carousel>
       </div>
     )
 }
