@@ -24,24 +24,23 @@ const ReactSlick = () => {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: false,
+          dots: true
         }
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1,
-          className: "center",
-          centerMode: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 490,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 4,
+          initialSlide: 1
         }
       }
     ]

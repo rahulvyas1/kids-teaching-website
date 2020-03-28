@@ -11,7 +11,7 @@ const BannerComponent = () => {
                 <PaddingWrapper>
                     <Row>
                         <Col expand="md" className="order1">
-                            <img src={BannerImg}  alt="banner"/>
+                            <img src={BannerImg}  alt="banner" style={{'width' : '100%'}}/>
                         </Col>  
                         <Col expand="md" className="order2">
                         <h1>Welcome to the school of the future.</h1>

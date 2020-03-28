@@ -13,9 +13,9 @@ const Home = () => {
         <>
         <BannerComponent />
         <Sqwrapper>
-            <SliderWrap>
+            {/* <SliderWrap>
                 <ReactSlick />
-            </SliderWrap>
+            </SliderWrap> */}
             <h3>Upcoming online courses <span className="live"><span className="oval"></span>LIVE</span></h3>
             <p className="upcoming-head">Learn from live teachers, not pre-recorded videos, in our intelligent virtual classrooms.  <br/> <img src={SkillIcon} alt="SkillIcon" /> = 21st century skills you’ll unlock <img src={CampCoin} alt="CampCoin" /> = coins you’ll earn for completion</p>
             <Container>

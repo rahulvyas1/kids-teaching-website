@@ -61,7 +61,8 @@ export const BannerWrapper = styled.div`
 export const PaddingWrapper = styled.div`
     padding: 145px 0;
     @media screen and (max-width: 767px) {
-        padding: 145px 0; 
+        padding: 37px 0;
+         
     }
     h1 {
         color:#fff;
@@ -117,6 +118,9 @@ export const Sqwrapper = styled.div`
         display:flex;
         justify-content:center;
         align-items:center;
+        @media screen and (max-width: 630px){
+            flex-direction:column;
+        }
     }
     .upcoming-head {
         color:#777b8c;
@@ -339,10 +343,16 @@ export const SliderWrap = styled.div`
             margin: 0 auto;
             width:90px;
         }
+        @media screen and (max-width: 490px){
+            width: 460px !important;
+        }
     }
     .slick-track{
         display: flex !important;
         justify-content: space-around;
+        @media screen and (max-width: 490px){
+            display:block !important;
+        }
     }
     .slick-prev:before{
         background-image: url(${shapeLeft});
@@ -373,6 +383,11 @@ export const SliderWrap = styled.div`
         align-items: center;
         justify-content: center;
         background-position: center;
+    }
+    .slick-next {
+        @media screen and (max-width: 490px){
+            right: 20px !important;
+        }
     }
 `;
 
