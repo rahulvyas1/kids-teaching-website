@@ -93,10 +93,11 @@ code {
     background: #ffffff;
     padding: 20px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
   }
   .navbar-collapse .nav-link {
     color: #000 !important;
-    text-align: left;
+    text-align: center;
     margin-bottom: 10px;
   }
   .navbar-collapse .nav-link:hover {
@@ -106,6 +107,7 @@ code {
     background-color: rgb(40, 134, 238);
     color:#ffffff;
     margin-bottom: 10px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 767px) {

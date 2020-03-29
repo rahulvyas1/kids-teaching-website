@@ -18,13 +18,24 @@ export const NavRight = styled.div`
         margin-right:15px;
     }
     @media screen and (max-width: 800px) {
-        text-align:left;
+        text-align:center;
         display: flex;
         flex-direction: column;
         img {
             margin-bottom:10px;
         }
     }
+&.log-div {
+    width:100%;
+    .logout {
+        float:right
+    }
+}
+    
+@media screen and (max-width: 630px) {
+    width:100%;
+   
+}
 `;
 
 export const BannerWrapper = styled.div`
@@ -72,6 +83,9 @@ export const PaddingWrapper = styled.div`
         @media screen and (max-width: 800px) {
             font-size:37px;
         }
+        @media screen and (max-width: 480px) {
+            font-size:30px;
+        }
     }
     h2 {
         color:#ffffff;
@@ -81,6 +95,9 @@ export const PaddingWrapper = styled.div`
         @media screen and (max-width: 767px) {
             text-align: center !important;
         }
+        @media screen and (max-width: 767px) {
+            font-size: 31px;
+        }
     }
     .subhead {
         text-align:left;
@@ -88,6 +105,9 @@ export const PaddingWrapper = styled.div`
         line-height:34px;
         font-size:22px;
         font-weight: 300;
+        @media screen and (max-width: 630px){
+            font-size: 20px;
+        }
     }
     .row {
         align-items:center;
@@ -105,12 +125,23 @@ export const Sqwrapper = styled.div`
     position:relative;
     top:0;
     padding-bottom:55px;
+    .card {
+        transition:300ms;
+        &:hover {
+            box-shadow: 0 1px 29px 1px hsla(0,0%,50.2%,.27) !important;
+        }
+    }
     @media screen and (max-width: 800px){
     .card {
         margin-bottom:30px;
     }
 }
     
+    .exploreCourse {
+        &:hover {
+            // box-shadow:0 1px 29px 1px hsla(0,0%,50.2%,.27);
+        }
+    }
 
     h3 {
         font-size:32px;
@@ -131,6 +162,9 @@ export const Sqwrapper = styled.div`
             width: 70%;
             margin: 25px auto;
         }
+        @media screen and (max-width: 360px) {
+            width: 92%;
+        }
     }
         
     }
@@ -146,6 +180,10 @@ export const Sqwrapper = styled.div`
         border-radius:5px;
         margin-left:21px;
         transition:300ms;
+        @media screen and (max-width: 630px){
+            margin-top:10px;
+            margin-left:0;
+        }
         &:hover {
             background:#b777d8;
         }
@@ -330,22 +368,22 @@ export const SliderWrap = styled.div`
     }
     .card-body {
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.02);
-        min-height: 227px;
+        padding-right: 0;
+        margin-right: 12px;
     }
     .slick-slider {
         z-index:2;
         top: -120px;
+        @media screen and (max-width: 630px){
+            top: -100px;
+        }
     }
     .slick-slide {
-        width:244px !important;
-        background:#ffffff;
         img {
             margin: 0 auto;
             width:90px;
         }
-        @media screen and (max-width: 490px){
-            width: 460px !important;
-        }
+       
     }
     .slick-track{
         display: flex !important;
@@ -385,8 +423,15 @@ export const SliderWrap = styled.div`
         background-position: center;
     }
     .slick-next {
-        @media screen and (max-width: 490px){
-            right: 20px !important;
+        @media screen and (max-width: 630px){
+            right: 10px !important;
+        }
+    }
+    .slick-prev {
+        left: -40px;
+        @media screen and (max-width: 630px){
+            left: 0;
+            z-index: 9;
         }
     }
 `;
@@ -427,6 +472,9 @@ export const TabsWrapper = styled.div`
     }
     .tab-pane {
         padding:50px;
+        @media screen and (max-width: 414px){
+            padding: 42px 27px;
+        }
     }
     .fliterDrop {
     &.show {
@@ -484,6 +532,15 @@ export const FlexWrapper = styled.div`
         background-color: #ffffff;
         .nav-link  {
             padding: 10px 30px;
+            @media screen and (max-width: 767px){
+                padding: 10px 9px;
+            }
+            @media screen and (max-width: 375px){
+                font-size: 12px;
+            }
+            &.active {
+                border-radius: 0;
+            }
         }
         &:nth-child(2) {
             border-radius:0;
@@ -499,8 +556,18 @@ export const FilterWrapper = styled.div`
     align-items:center;
     justify-content:space-between;
     margin-bottom:45px;
+    @media screen and (max-width: 630px){
+        flex-direction:column;
+        margin-bottom:20px;
+    }
     p {
         margin-bottom:0;
+        @media screen and (max-width: 630px){
+            margin-bottom:10px;
+        }
+        @media screen and (max-width: 375px){
+            font-size: 13px;
+        }
     }
 `;
 export const RCardWrap = styled.div`
@@ -565,4 +632,9 @@ export const RCardWrap = styled.div`
     .card-body {
         min-height:auto;
     }
+`;
+
+export const SlideInner = styled.div`
+    background:#ffffff;
+    min-height:228px;
 `;

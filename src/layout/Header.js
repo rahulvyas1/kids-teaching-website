@@ -23,7 +23,7 @@ const Header = (props) => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     {props.isLoggedIn
-                        ? <NavRight><Button variant="primary" onClick={handleLogOut}>LOG OUT</Button></NavRight>
+                        ? <NavRight className="log-div"><Button className="logout" variant="primary" onClick={handleLogOut}>LOG OUT</Button></NavRight>
                         : <>
                             <Nav className="mr-auto">
                                 <Nav.Link href="#home" className="active">ONLINE COURSES</Nav.Link>

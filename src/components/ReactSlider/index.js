@@ -7,7 +7,7 @@ import MRIcon from '../../Assets/mr-icon.svg';
 import Icon from '../../Assets/icon.svg';
 import Group3Icon from '../../Assets/group-3.svg';
 import VrIcon from '../../Assets/vr.svg';
-import { CardWrap } from '../../Assets/style'
+import { CardWrap, SlideInner } from '../../Assets/style'
 
 const ReactSlick = () => {
   var settings = {
@@ -52,50 +52,60 @@ const ReactSlick = () => {
         <CardWrap>
             <Card className="text-center">
                 <Card.Body>
-                    <img className='Group-14' src={GroupIcon} alt="GroupIcon" />
-                    <Card.Text className='text-center'>
-                        Web <br/> development
-                    </Card.Text>
+                    <SlideInner>
+                        <img className='Group-14' src={GroupIcon} alt="GroupIcon" />
+                        <Card.Text className='text-center'>
+                            Web <br/> development
+                        </Card.Text>
+                    </SlideInner>
                 </Card.Body>
                 </Card>
           </CardWrap>
         <CardWrap>
             <Card className="text-center">
                 <Card.Body>
-                    <img className='Group-14' src={Icon} alt="Icon" />
-                    <Card.Text className='text-center'>
-                        Mobile App <br/> Development
-                    </Card.Text>
+                    <SlideInner>
+                        <img className='Group-14' src={Icon} alt="Icon" />
+                        <Card.Text className='text-center'>
+                            Mobile App <br/> Development
+                        </Card.Text>
+                    </SlideInner>
                 </Card.Body>
                 </Card>
           </CardWrap>
           <CardWrap>
             <Card className="text-center">
                 <Card.Body>
-                    <img className='Group-14' src={VrIcon} alt="Icon" />
-                    <Card.Text className='text-center'>
-                        Mixed Reality <br/> (AR/VR)
-                    </Card.Text>
+                    <SlideInner>
+                        <img className='Group-14' src={VrIcon} alt="Icon" />
+                        <Card.Text className='text-center'>
+                            Mixed Reality <br/> (AR/VR)
+                        </Card.Text>
+                    </SlideInner>
                 </Card.Body>
                 </Card>
           </CardWrap>
           <CardWrap>
             <Card className="text-center">
                 <Card.Body>
-                    <img className='Group-14' src={Group3Icon} alt="MRIcon" />
-                    <Card.Text className='text-center'>
-                        Machine <br/> Learning (AI)
-                    </Card.Text>
+                    <SlideInner>
+                        <img className='Group-14' src={Group3Icon} alt="MRIcon" />
+                        <Card.Text className='text-center'>
+                            Machine <br/> Learning (AI)
+                        </Card.Text>
+                    </SlideInner>
                 </Card.Body>
                 </Card>
           </CardWrap>
           <CardWrap>
             <Card className="text-center">
                 <Card.Body>
-                    <img className='Group-14' src={Group3Icon} alt="MRIcon" />
-                    <Card.Text className='text-center'>
-                        Machine <br/> Learning (AI)
-                    </Card.Text>
+                    <SlideInner>
+                        <img className='Group-14' src={Group3Icon} alt="MRIcon" />
+                        <Card.Text className='text-center'>
+                            Machine <br/> Learning (AI)
+                        </Card.Text>
+                    </SlideInner>
                 </Card.Body>
                 </Card>
           </CardWrap>

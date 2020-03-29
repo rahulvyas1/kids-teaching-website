@@ -41,7 +41,7 @@ const TabsComponent = () => {
                     </FilterWrapper>
                     <RCardWrap>
                       <Row>
-                        <Col expand="xl">
+                        <Col expand="xl" className="exploreCourse">
                           <Card style={{ width: '' }}>
                             <Card.Img variant="top" src={HolderImg} />
                             <Card.Body>
