@@ -123,4 +123,7 @@ code {
     top: 2px !important;
     right: 0;
   }
+  .sm-padding {
+    padding: 67px 0;
+  }
 }

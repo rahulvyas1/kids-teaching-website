@@ -13,7 +13,7 @@ const CoursesGrid = props => {
     const {icon, label, title, lavel, gradRange, perReq, skills, campCoin, date, weeks, times, amount} = props;
     return (
         <Col expand="md">
-            <Card style={{'box-shadow' : '0 2px 4px 0 rgba(0, 0, 0, 0.1)'}} >
+            <Card className="upcomingGrid" style={{'box-shadow' : '0 2px 4px 0 rgba(0, 0, 0, 0.1)'}} >
                 <FeatureWrap>
                     <Card.Img variant="top" src={icon} />
                     <span class="featureTag">{label}</span>

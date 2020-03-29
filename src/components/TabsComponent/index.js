@@ -42,7 +42,7 @@ const TabsComponent = () => {
                     <RCardWrap>
                       <Row>
                         <Col expand="xl" className="exploreCourse">
-                          <Card style={{ width: '' }}>
+                          <Card className="upcomingGrid" style={{ width: '' }}>
                             <Card.Img variant="top" src={HolderImg} />
                             <Card.Body>
                               <Card.Title>
@@ -69,7 +69,7 @@ const TabsComponent = () => {
                           </Card>
                         </Col>
                         <Col expand="xl">
-                        <Card style={{ width: '' }}>
+                        <Card className="upcomingGrid" style={{ width: '' }}>
                             <Card.Img variant="top" src={HolderImg} />
                             <Card.Body>
                               <Card.Title>
@@ -96,7 +96,7 @@ const TabsComponent = () => {
                           </Card>
                         </Col>
                         <Col expand="xl">
-                        <Card style={{ width: '' }}>
+                        <Card className="upcomingGrid" style={{ width: '' }}>
                             <Card.Img variant="top" src={HolderImg} />
                             <Card.Body>
                               <Card.Title>

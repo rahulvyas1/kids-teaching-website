@@ -125,7 +125,7 @@ export const Sqwrapper = styled.div`
     position:relative;
     top:0;
     padding-bottom:55px;
-    .card {
+    .card.upcomingGrid {
         transition:300ms;
         &:hover {
             box-shadow: 0 1px 29px 1px hsla(0,0%,50.2%,.27) !important;
@@ -637,4 +637,7 @@ export const RCardWrap = styled.div`
 export const SlideInner = styled.div`
     background:#ffffff;
     min-height:228px;
+    @media screen and (max-width: 630px){
+        padding: 23px 0;
+    }
 `;
