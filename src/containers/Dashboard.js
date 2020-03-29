@@ -11,12 +11,12 @@ const Dashboard = () => {
         <>
             <BannerWrapper className="inner">
                 <Container>
-                    <PaddingWrapper>
+                    <PaddingWrapper class="sm-padding">
                         <h2 className="text-left">ONLINE COURSES</h2>
                         <Row>
                             <Col expand="md">
                                 <BannerCard>
-                                    <img src={LearnIcon} alt="LearnIcon " />
+                                    <img src={LearnIcon} alt="LearnIcon" />
                                     <h3>Learn interactively.</h3>
                                     <p>LIVE online sessions with our expert mentors.<a href=""> See a demo.</a></p>
                                 </BannerCard>

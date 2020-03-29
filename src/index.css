@@ -26,19 +26,26 @@ code {
   font-size: 15px;
   letter-spacing: 2px;
   position: relative;
+  transition: 300ms;
 }
 .navbar-nav a::before {
  content: '';
  position: absolute;
- width: 30px;
+ width: 0px;
  height: 3px;
  border-radius: 3px;
  background-color: #ffffff;
  bottom: 0;
- display: none;
+ 
+ transition: 300ms;
+}
+.navbar-nav a:hover::before {
+  display: block;
+  width: 40px;
 }
 .navbar-nav a.active::before {
   display: block;
+  width: 30px;
 }
 .navbar-nav a:hover {
   color: #fff;
@@ -116,6 +123,7 @@ code {
   }
   .rsTextCenter button {
     float: none;
+    margin-bottom: 24px;
   }
   .fixed-top {
     position: relative !important;

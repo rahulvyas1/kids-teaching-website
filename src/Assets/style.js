@@ -66,7 +66,11 @@ export const BannerWrapper = styled.div`
         bottom: 0px;
         clip-path: ellipse(53% 58% at 50% 103%);
     }
-   
+@media (max-width: 630px) {
+    .sm-padding {
+        padding: 67px 0;
+    }
+}
 `;
 
 export const PaddingWrapper = styled.div`
@@ -291,7 +295,8 @@ export const Sqwrapper = styled.div`
             height: 30px;
             justify-content: center;
             align-items: center;
-            width: 140px;
+            width: 100px;
+            float:right;
             transition:300ms;
             &:hover {
                 text-decoration:none;
@@ -471,9 +476,9 @@ export const TabsWrapper = styled.div`
         top: -19px;
     }
     .tab-pane {
-        padding:50px;
+        padding: 30px 50px;
         @media screen and (max-width: 414px){
-            padding: 42px 27px;
+            padding: 24px 27px;
         }
     }
     .fliterDrop {
