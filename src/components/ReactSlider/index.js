@@ -11,36 +11,37 @@ import { CardWrap } from '../../Assets/style'
 
 const ReactSlick = () => {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
     initialSlide: 0,
+    className: "",
+    centerMode: false,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
+          dots: false
         }
       },
       {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 490,
+        breakpoint: 769,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 4,
-          initialSlide: 1
+          slidesToScroll: 1,
+          centerMode: true,
+        }
+      },
+      {
+        breakpoint: 766,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       }
     ]
