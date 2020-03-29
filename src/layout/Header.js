@@ -17,7 +17,7 @@ const Header = (props) => {
     };
 
     return (
-        <Navbar expand="xl" className={`mainMenu ${props.activeClass}`} fixed="top">
+        <Navbar onToggle={props.handleNavExpand} expanded={props.navExpanded} expand="xl" className={`mainMenu ${props.activeClass}`} fixed="top">
             <Container>
                 <Navbar.Brand href="#home"><img src={logo} alt={'logo'} /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -25,8 +25,8 @@ const Header = (props) => {
                     {props.isLoggedIn
                         ? <NavRight className="log-div"><Button className="logout" variant="primary" onClick={handleLogOut}>LOG OUT</Button></NavRight>
                         : <>
-                            <Nav className="mr-auto">
-                                <Nav.Link href="#home" className="active">ONLINE COURSES</Nav.Link>
+                            <Nav className="mr-auto" defaultActiveKey={'#home'}>
+                                <Nav.Link href="#home">ONLINE COURSES</Nav.Link>
                                 <Nav.Link href="#features">OFFLINE CAMPS</Nav.Link>
                                 <Nav.Link href="#pricing">REFER & EARN</Nav.Link>
                             </Nav>

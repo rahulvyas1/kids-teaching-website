@@ -9,6 +9,7 @@ import Footer from './layout/Footer';
 class Routes extends React.Component {
   state = {
     activeClass: 'top',
+    navExpanded: false,
     isLoggedIn: false
   }
   componentDidMount(){
@@ -23,21 +24,29 @@ class Routes extends React.Component {
   }
 
   handleLogIn = () => {
+    this.handleNavExpand();
     this.setState({isLoggedIn: true});
   };
 
   handleLogOut = () => {
+    this.handleNavExpand();
     this.setState({isLoggedIn: false});
   };
 
+  handleNavExpand = () => {
+    this.setState(preState => ({navExpanded: !preState.navExpanded}));
+  }
+
   render () {
-    const {isLoggedIn, activeClass} = this.state;
+    const {isLoggedIn, activeClass, navExpanded} = this.state;
     return (
       <Router>
         <Header
-          activeClass={ activeClass }
+          activeClass={activeClass}
           isLoggedIn={isLoggedIn}
+          navExpanded={navExpanded}
           handleLogOut={this.handleLogOut}
+          handleNavExpand={this.handleNavExpand}
           handleLogIn={this.handleLogIn}/>
         <Switch>
           <Route path="/" exact component={Home} />
